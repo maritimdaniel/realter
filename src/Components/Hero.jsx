@@ -2,6 +2,7 @@ import React from "react";
 import { Box, styled, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import heroImg from "../media/hero_illustration.png";
+import CustomButton from "./CustomButton";
 
 const Hero = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
@@ -51,6 +52,12 @@ const Hero = () => {
               Make your life more comfortable by living in a house that suits
               your style.
             </Typography>
+            <CustomButton
+              backgroundColor="#0F1B4C"
+              color="#fff"
+              buttonText="More About Us"
+              heroBtn={true}
+            />
           </Box>
 
           <Box sx={{ flex: "1.25" }}>
