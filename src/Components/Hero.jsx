@@ -3,6 +3,7 @@ import { Box, styled, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import heroImg from "../media/hero_illustration.png";
 import CustomButton from "./CustomButton";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
@@ -30,6 +31,7 @@ const Hero = () => {
   return (
     <Box sx={{ backgroundColor: "#E6F0FF", minHeight: "80vh" }}>
       <Container>
+        <Navbar />
         <CustomBox>
           <Box sx={{ flex: "1" }}>
             <Typography
