@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Components/Hero";
 import Companies from "./Components/Companies";
 import Guide from "./Components/Guide";
+import Properties from "./Components/Properties";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Hero />
       <Companies />
       <Guide />
+      <Properties />
     </>
   );
 }
