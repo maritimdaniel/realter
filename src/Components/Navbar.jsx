@@ -7,7 +7,6 @@ import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactsIcon from "@mui/icons-material/Contacts";
-import logoImg from "../media/logo.png";
 import { Container } from "@mui/system";
 import CustomButton from "./CustomButton";
 import {
@@ -65,6 +64,13 @@ export const Navbar = () => {
     </Box>
   );
 
+  const Logo = styled(Typography)(({ theme }) => ({
+    fontSize: "25px",
+    color: "#4F5361",
+    fontWeight: "bold",
+    cursor: "pointer",
+  }));
+
   const NavLink = styled(Typography)(({ theme }) => ({
     fontSize: "14px",
     color: "#4F5361",
@@ -104,13 +110,6 @@ export const Navbar = () => {
     },
   }));
 
-  const NavbarLogo = styled("img")(({ theme }) => ({
-    cursor: "pointer",
-    [theme.breakpoints.down("md")]: {
-      display: "none",
-    },
-  }));
-
   return (
     <NavbarContainer>
       <Box
@@ -130,7 +129,7 @@ export const Navbar = () => {
           >
             {list("left")}
           </Drawer>
-          <NavbarLogo src={logoImg} alt="logo" />
+          <Logo>Realter</Logo>
         </Box>
 
         <NavbarLinksBox>
@@ -150,7 +149,7 @@ export const Navbar = () => {
           gap: "1rem",
         }}
       >
-        <NavLink variant="body2">Sign Up</NavLink>
+        <NavLink variant="body2">Sign In</NavLink>
         <CustomButton
           backgroundColor="#0F1B4C"
           color="#fff"

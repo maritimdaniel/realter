@@ -1,6 +1,6 @@
-import house1 from "./media/image1.png";
-import house2 from "./media/image2.png";
-import house3 from "./media/image3.png";
+import house1 from "./media/house1.jpg";
+import house2 from "./media/house2.jpg";
+import house3 from "./media/house3.jpg";
 
 export const properties = [
   {
